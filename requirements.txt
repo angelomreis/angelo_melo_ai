@@ -1,0 +1,5 @@
+flask
+openai
+python-dotenv
+psycopg2-binary
+gunicorn
