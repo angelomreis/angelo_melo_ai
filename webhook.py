@@ -24,6 +24,7 @@ def verify_webhook():
 @webhook_bp.route("/webhook", methods=["POST"])
 def receive_message():
     data = request.get_json()
+    print("Recebi uma mensagem no webhook:", json.dumps(data, indent=2, ensure_ascii=False))  # <-- Debug para ver a mensagem recebida
 
     if "entry" in data:
         for entry in data["entry"]:
