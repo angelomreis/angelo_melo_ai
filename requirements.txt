@@ -2,5 +2,5 @@ flask
 openai
 python-dotenv
 psycopg2-binary
-gunicornrequests
+gunicorn
 requests
