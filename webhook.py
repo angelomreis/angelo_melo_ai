@@ -2,7 +2,7 @@ from flask import Blueprint, request
 
 webhook_bp = Blueprint("webhook", __name__)
 
-VERIFY_TOKEN = "token_test_ngrok"
+VERIFY_TOKEN = "token_meta_business"
 
 @webhook_bp.route("/webhook", methods=["GET"])
 def verify_webhook():
