@@ -59,4 +59,5 @@ def send_whatsapp_message(to, message):
         "text": {"body": message}
     }
     response = requests.post(url, headers=headers, json=payload)
+    print(f"Resposta da API do WhatsApp: {response.json()}")
     return response.json()
